@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Congratulations Ankit Bro!</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-beige text-center p-8">
+    <canvas id="fireworksCanvas" class="fixed inset-0 pointer-events-none z-0"></canvas>
+    <div class="container bg-white p-6 rounded-lg shadow-lg inline-block relative z-10">
+        <h1 class="text-4xl text-red-500 mb-4 animate-slideIn">Congratulations Ankit & Ananya!</h1>
+        <div class="photo mb-4">
+            <img id="photo" src="ankit_bride_photo2.jpg" alt="Ankit and his bride" class="w-64 h-auto rounded-lg mx-auto animate-zoomIn">
+        </div>
+        <p class="message text-gray-700 mb-2 animate-fadeIn">Dear Ankit Bro,</p>
+        <p class="message text-gray-700 mb-2 animate-fadeIn">Wishing you both a lifetime of love and happiness. May your journey together be filled with joy, laughter, and endless love. Sorry main aa nahi paya, but my thoughts and best wishes are with you on this special day.</p>
+        <p class="message text-gray-700 mb-4 animate-fadeIn">Best wishes for your future!</p>
+        <button id="giftButton" class="bg-red-500 text-white py-2 px-4 rounded-lg hover:bg-red-600 animate-bounce">Click here for your gift!</button>
+    </div>
+
+    <div id="giftPopup" class="popup fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center hidden z-20">
+        <div class="popup-content bg-white p-6 rounded-lg shadow-lg text-center relative">
+            <span class="close text-gray-500 text-2xl font-bold cursor-pointer absolute top-2 right-2">&times;</span>
+            <p class="mt-4">Your Gift Code: <strong>WEDDING2024</strong></p>
+        </div>
+    </div>
+
+    <audio id="backgroundMusic" loop>
+        <source src="bg-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <button id="playMusicButton" class="bg-green-500 text-white py-2 px-4 rounded-lg hover:bg-green-600 fixed bottom-4 right-4 z-20">Play Music</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
